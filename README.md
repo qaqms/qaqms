@@ -11,17 +11,17 @@
 <table width="100%">
 <tr>
 <td width="37%" valign="top">
-<h3>Languages</h3>
+<h4>Languages</h4>
 <p>
-<a href="https://github.com/qaqms?tab=repositories"><img src="./assets/skill-python.svg" width="36" height="36" alt="Python" title="Python" /></a>&nbsp;
-<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion/tree/main/ui"><img src="./assets/skill-ts.svg" width="36" height="36" alt="TypeScript" title="TypeScript" /></a>
+<a href="https://github.com/qaqms?tab=repositories"><code><img src="./assets/logo-python.svg" width="20" height="20" alt="Python" title="Python" /></code></a>
+<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion/tree/main/ui"><code><img src="./assets/logo-ts.svg" width="20" height="20" alt="TypeScript" title="TypeScript" /></code></a>
 </p>
-<h3>Frameworks & Tools</h3>
+<h4>Frameworks &amp; Tools</h4>
 <p>
-<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion/tree/main/ui"><img src="./assets/skill-react.svg" width="36" height="36" alt="React 风格 TSX 面板" title="TSX 面板与组件" /></a>&nbsp;
-<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion"><img src="./assets/skill-sqlite.svg" width="36" height="36" alt="SQLite · 宿主 PluginStore" title="SQLite · 宿主 PluginStore" /></a>&nbsp;
-<a href="https://github.com/qaqms?tab=repositories"><img src="./assets/skill-git.svg" width="36" height="36" alt="Git" title="Git" /></a>&nbsp;
-<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion/actions"><img src="./assets/skill-github.svg" width="36" height="36" alt="GitHub Actions" title="GitHub Actions" /></a>
+<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion/tree/main/ui"><code><img src="./assets/logo-react.svg" width="23" height="20" alt="React 风格 TSX 面板" title="TSX 面板与组件" /></code></a>
+<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion"><code><img src="./assets/logo-sqlite.svg" width="18" height="20" alt="SQLite · 宿主 PluginStore" title="SQLite · 宿主 PluginStore" /></code></a>
+<a href="https://github.com/qaqms?tab=repositories"><code><img src="./assets/logo-git.svg" width="20" height="20" alt="Git" title="Git" /></code></a>
+<a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion/actions"><code><img src="./assets/logo-github.svg" width="20" height="20" alt="GitHub Actions" title="GitHub Actions" /></code></a>
 </p>
 <p><sub>Python / TypeScript / TSX<br />pytest / Ruff / GitHub Actions</sub></p>
 </td>

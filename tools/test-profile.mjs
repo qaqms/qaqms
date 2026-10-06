@@ -29,7 +29,11 @@ assert.equal($('picture').length, 3);
 assert.equal($('table').length, 1);
 assert.ok(!$('h3').toArray().some(e => $(e).text() === 'Selected Works'));
 assert.ok(!$('img').toArray().some(e => ($(e).attr('src') || '').includes('snake')));
-assert.equal($('img[src*="skill-"]').length, 6);
+assert.equal($('img[src*="skill-"]').length, 0);
+assert.equal($('code img[src*="logo-"]').length, 6);
+for (const element of $('img[src*="logo-"]').toArray()) assert.equal($(element).attr('height'), '20');
+const githubLogo = await readFile(join(root, 'assets/logo-github.svg'), 'utf8');
+assert.ok(githubLogo.includes('prefers-color-scheme:dark'));
 assert.equal($('img[src="./assets/typing.svg"]').length, 1);
 const typing = load(await readFile(join(root, 'assets/typing.svg'), 'utf8'), { xmlMode: true });
 assert.equal(typing('animate').attr('repeatCount'), 'indefinite');
@@ -43,7 +47,7 @@ for (const file of await readdir(join(root, 'assets'))) {
   assert.equal(xml('svg').length, 1, file);
   assert.ok(xml('svg').attr('viewBox'), file);
   assert.ok(!/NaN|undefined|Infinity|<script/i.test(source), file);
-  if (!file.startsWith('skill-') && !file.startsWith('snake-')) assert.ok(xml('title').length, file);
+  if (!file.startsWith('skill-') && !file.startsWith('logo-') && !file.startsWith('snake-')) assert.ok(xml('title').length, file);
 }
 for (const theme of ['dark', 'light']) {
   const dashboard = await readFile(join(root, `assets/dashboard-${theme}.svg`), 'utf8');

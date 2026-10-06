@@ -131,11 +131,18 @@ for (const [theme, c] of Object.entries(palettes)) {
   await writeFile(join(assets, `contributions-${theme}.svg`), svg(880, 216, 'Real GitHub contribution calendar with a decorative scanning indicator; the scan does not modify the data.', body));
 }
 await renderDashboard(data, assets);
-const skills = { python: 'Python-Dark', ts: 'TypeScript', react: 'React-Dark', sqlite: 'SQLite', git: 'Git', github: 'Github-Dark' };
-for (const [id, name] of Object.entries(skills)) {
-  const path = join(assets, `skill-${id}.svg`);
+const logos = { python: 'python', ts: 'typescript-icon', react: 'react', sqlite: 'sqlite', git: 'git-icon', github: 'github-icon' };
+for (const [id, name] of Object.entries(logos)) {
+  const path = join(assets, `logo-${id}.svg`);
   try { await access(path); } catch {
-    await writeFile(path, await get(`https://raw.githubusercontent.com/tandpfun/skill-icons/7f7e691e71aec64e8354bf697835e009d1ad80f8/icons/${name}.svg`, false));
+    const source = await get(`https://cdn.svgporn.com/logos/${name}.svg`, false);
+    const logo = load(source, { xmlMode: true });
+    if (id === 'sqlite') {
+      logo('g > path').first().remove();
+      logo('svg').attr({ width: '198px', viewBox: '0 0 198 228' });
+    }
+    if (id === 'github') logo('svg').prepend('<style>path{fill:#24292f}@media(prefers-color-scheme:dark){path{fill:#e6edf3}}</style>');
+    await writeFile(path, logo.xml());
   }
 }
 console.log(JSON.stringify({ total, repos: data.publicRepos, languages, date: today }));

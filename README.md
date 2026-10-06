@@ -46,6 +46,5 @@
 
 <h2>Contribution Landscape</h2>
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/landscape-dark.svg" /><img src="./assets/landscape-light.svg" width="880" alt="由真实逐日贡献数量绘制的等距立体贡献地形与统计" /></picture></p>
-<p><sub>Public GitHub snapshot · 语言比例按源码字节统计 · 数据日期见图表</sub></p>
 <hr />
 <p align="center"><sub>qaqms / CODE & LITTLE WORLDS</sub></p>

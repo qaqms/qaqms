@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="42" viewBox="0 0 360 42" role="img" aria-labelledby="title">
+<title id="title">CODE / ANIME / N.E.K.O.</title>
+<style>
+text{font-family:Consolas,Menlo,monospace;font-size:20px;letter-spacing:0;fill:#58a6ff}
+.static{display:none}
+@media(prefers-reduced-motion:reduce){.animated{display:none}.static{display:inline}}
+</style>
+<defs><clipPath id="reveal"><rect width="264" height="42"><animate attributeName="width" values="0;12;24;36;48;60;72;84;96;108;120;132;144;156;168;180;192;204;216;228;240;252;264;264;264;264;264;264;264;264;264;264;264;240;216;192;168;144;120;96;72;48;24;0" calcMode="discrete" dur="5s" repeatCount="indefinite"/></rect></clipPath></defs>
+<text class="animated" x="0" y="28" clip-path="url(#reveal)">CODE / ANIME / N.E.K.O.</text>
+<text class="static" x="0" y="28">CODE / ANIME / N.E.K.O.</text>
+</svg>

@@ -30,6 +30,11 @@ assert.equal($('table').length, 1);
 assert.ok(!$('h3').toArray().some(e => $(e).text() === 'Selected Works'));
 assert.ok(!$('img').toArray().some(e => ($(e).attr('src') || '').includes('snake')));
 assert.equal($('img[src*="skill-"]').length, 6);
+assert.equal($('img[src="./assets/typing.svg"]').length, 1);
+const typing = load(await readFile(join(root, 'assets/typing.svg'), 'utf8'), { xmlMode: true });
+assert.equal(typing('animate').attr('repeatCount'), 'indefinite');
+assert.equal(typing('clipPath rect').attr('width'), '264');
+assert.ok(typing('style').text().includes('prefers-reduced-motion'));
 for (const element of $('a').toArray()) assert.ok($(element).attr('href')?.startsWith('https://github.com/qaqms'));
 for (const file of await readdir(join(root, 'assets'))) {
   if (!file.endsWith('.svg')) continue;

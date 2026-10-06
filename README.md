@@ -3,7 +3,7 @@
 <p>
 <img align="right" src="./assets/pixel-characters.png" width="292" alt="二次元像素角色小队" />
 <br />
-<code>CODE / ANIME / N.E.K.O.</code><br /><br />
+<img src="./assets/typing.svg" width="360" height="42" alt="CODE / ANIME / N.E.K.O. 打字机标题" /><br /><br />
 喜欢二次元 · 专注于 N.E.K.O. 插件
 </p>
 <br clear="both" />

@@ -1,0 +1,16 @@
+{
+  "name": "qaqms-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "node tools/refresh-profile.mjs",
+    "test": "node tools/test-profile.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "d3": "7.9.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.11"
+  }
+}

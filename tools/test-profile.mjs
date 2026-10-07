@@ -21,10 +21,22 @@ assert.ok(Object.values(data.languages).every(value => Number.isInteger(value) &
 const $ = load(await readFile(join(root, 'README.md'), 'utf8'));
 for (const element of $('img,source').toArray()) {
   const path = $(element).attr('src') || $(element).attr('srcset');
-  assert.ok(path?.startsWith('./assets/'), `Nonlocal image: ${path}`);
-  await access(join(root, path));
+  if (path?.startsWith('./assets/')) {
+    await access(join(root, path));
+  } else {
+    assert.equal(element.tagName, 'img', 'Only the live counter may be remote');
+    const counter = new URL(path);
+    assert.equal(counter.origin, 'https://count.getloli.com');
+    assert.equal(counter.pathname, '/@qaqms', 'Keep a stable, personal counter name');
+    const expected = new URLSearchParams({ theme: 'moebooru', padding: '7', offset: '0', align: 'top', scale: '1', pixelated: '1', darkmode: 'auto' });
+    assert.deepEqual([...counter.searchParams].sort(), [...expected].sort(), 'No fixed num, demo mode, or rotating counter identifiers');
+    assert.equal($(element).attr('width'), '292');
+    assert.equal($(element).attr('align'), 'right');
+  }
   if (element.tagName === 'img') assert.ok($(element).attr('alt'));
 }
+assert.equal($('img[src^="https://count.getloli.com/"]').length, 1, 'Embed the live counter exactly once');
+assert.equal($('img[src="./assets/pixel-characters.png"]').length, 0, 'A character illustration is not a visitor counter');
 assert.equal($('picture').length, 3);
 assert.equal($('table').length, 1);
 assert.ok(!$('h3').toArray().some(e => $(e).text() === 'Selected Works'));

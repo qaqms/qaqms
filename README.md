@@ -1,7 +1,8 @@
 <h1>Hi, I'm @qaqms</h1>
 
 <p>
-<img align="right" src="./assets/pixel-characters.png" width="292" alt="二次元像素角色小队" />
+<!-- Keep the counter name stable; demo and num parameters disable live counting. -->
+<img align="right" src="https://count.getloli.com/@qaqms?theme=moebooru&amp;padding=7&amp;offset=0&amp;align=top&amp;scale=1&amp;pixelated=1&amp;darkmode=auto" width="292" alt="qaqms 的萌系主页访问计数器" />
 <br />
 <img src="./assets/typing.svg" width="360" height="42" alt="CODE / ANIME / N.E.K.O. 打字机标题" /><br /><br />
 喜欢二次元 · 专注于 N.E.K.O. 插件

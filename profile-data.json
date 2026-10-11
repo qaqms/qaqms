@@ -1,55 +1,20 @@
 {
   "user": "qaqms",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "joined": "2024-07-24",
-  "publicRepos": 10,
+  "publicRepos": 11,
   "sourceRepos": 8,
   "stars": 0,
   "forks": 1,
   "languages": {
-    "Java": 842829,
+    "Java": 1381683,
+    "JavaScript": 348420,
     "PowerShell": 376,
-    "Python": 3549866,
-    "TypeScript": 839690,
-    "JavaScript": 219097
+    "Python": 3794698,
+    "TypeScript": 906586
   },
-  "total": 317,
+  "total": 364,
   "days": [
-    {
-      "date": "2025-10-05",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-10-06",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-10-07",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-10-08",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-10-09",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-10-10",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-10-11",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-10-12",
       "level": 0,
@@ -1677,7 +1642,7 @@
     },
     {
       "date": "2026-09-02",
-      "level": 3,
+      "level": 2,
       "count": 15
     },
     {
@@ -1687,7 +1652,7 @@
     },
     {
       "date": "2026-09-04",
-      "level": 3,
+      "level": 2,
       "count": 15
     },
     {
@@ -1702,7 +1667,7 @@
     },
     {
       "date": "2026-09-07",
-      "level": 3,
+      "level": 2,
       "count": 13
     },
     {
@@ -1717,7 +1682,7 @@
     },
     {
       "date": "2026-09-10",
-      "level": 3,
+      "level": 2,
       "count": 15
     },
     {
@@ -1742,7 +1707,7 @@
     },
     {
       "date": "2026-09-15",
-      "level": 4,
+      "level": 3,
       "count": 22
     },
     {
@@ -1752,7 +1717,7 @@
     },
     {
       "date": "2026-09-17",
-      "level": 2,
+      "level": 1,
       "count": 6
     },
     {
@@ -1762,7 +1727,7 @@
     },
     {
       "date": "2026-09-19",
-      "level": 3,
+      "level": 2,
       "count": 15
     },
     {
@@ -1772,7 +1737,7 @@
     },
     {
       "date": "2026-09-21",
-      "level": 2,
+      "level": 1,
       "count": 6
     },
     {
@@ -1812,7 +1777,7 @@
     },
     {
       "date": "2026-09-29",
-      "level": 2,
+      "level": 1,
       "count": 6
     },
     {
@@ -1852,7 +1817,7 @@
     },
     {
       "date": "2026-10-07",
-      "level": 3,
+      "level": 2,
       "count": 15
     },
     {
@@ -1867,8 +1832,13 @@
     },
     {
       "date": "2026-10-10",
-      "level": 1,
-      "count": 3
+      "level": 4,
+      "count": 30
+    },
+    {
+      "date": "2026-10-11",
+      "level": 3,
+      "count": 20
     }
   ],
   "source": "https://github.com/qaqms"

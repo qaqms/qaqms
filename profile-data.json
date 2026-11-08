@@ -1,6 +1,6 @@
 {
   "user": "qaqms",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "joined": "2024-07-24",
   "publicRepos": 11,
   "sourceRepos": 5,
@@ -9,48 +9,13 @@
   "languages": {
     "Java": 4773575,
     "Lua": 30775,
-    "JavaScript": 550853,
+    "JavaScript": 589604,
     "PowerShell": 1201,
-    "Python": 3637420,
-    "TypeScript": 876272
+    "Python": 3673343,
+    "TypeScript": 906650
   },
-  "total": 474,
+  "total": 475,
   "days": [
-    {
-      "date": "2025-11-02",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-03",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-04",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-05",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-06",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-07",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-08",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-11-09",
       "level": 0,
@@ -1868,6 +1833,11 @@
     },
     {
       "date": "2026-11-07",
+      "level": 1,
+      "count": 1
+    },
+    {
+      "date": "2026-11-08",
       "level": 0,
       "count": 0
     }

@@ -1,6 +1,6 @@
 {
   "user": "qaqms",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "joined": "2024-07-24",
   "publicRepos": 11,
   "sourceRepos": 4,
@@ -9,14 +9,14 @@
   "languages": {
     "Java": 4773575,
     "Lua": 30775,
-    "JavaScript": 2493816,
+    "JavaScript": 2499476,
     "PowerShell": 1201,
-    "Python": 4146525,
-    "TypeScript": 1069592,
+    "Python": 4208894,
+    "TypeScript": 1113663,
     "HTML": 689663,
     "CSS": 44739
   },
-  "total": 506,
+  "total": 516,
   "days": [
     {
       "date": "2025-11-23",
@@ -1851,12 +1851,17 @@
     {
       "date": "2026-11-24",
       "level": 2,
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-11-25",
+      "level": 2,
+      "count": 8
+    },
+    {
+      "date": "2026-11-26",
       "level": 1,
-      "count": 1
+      "count": 2
     }
   ],
   "source": "https://github.com/qaqms"

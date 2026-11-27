@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 650px) and (prefers-color-scheme: dark)" srcset="./assets/banner-mobile-dark.svg" />
-  <source media="(max-width: 650px)" srcset="./assets/banner-mobile-light.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
-  <img width="832" src="./assets/banner-light.svg" alt="Hi there, I'm qaqms. AI 角色陪伴 · LLM Agent · N.E.K.O. 插件" />
+  <source media="(max-width: 650px) and (prefers-color-scheme: dark)" srcset="./assets/header-mobile-dark.svg" />
+  <source media="(max-width: 650px)" srcset="./assets/header-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg" />
+  <img width="832" src="./assets/header-light.svg" alt="Hi there, I'm qaqms. AI 角色陪伴 · LLM Agent" />
 </picture>
 
 <p>

@@ -46,7 +46,7 @@ function hero(c, data, mobile) {
   const w = mobile ? 440 : 880, h = mobile ? 250 : 260;
   let b = `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c.bg}"/><stop offset="1" stop-color="${c.bg2}"/></linearGradient></defs>`;
   b += `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="16" fill="url(#g)" stroke="${c.border}"/>`;
-  const sub = 'AI 角色陪伴 · LLM Agent · N.E.K.O. 插件';
+  const sub = 'AI 角色陪伴 · LLM Agent';
   if (!mobile) {
     b += `<circle cx="800" cy="40" r="90" fill="${c.faint}" opacity=".55"/><circle cx="690" cy="236" r="54" fill="${c.faint}" opacity=".45"/>`;
     b += paw(620, 80, 1, c.accent, .22) + paw(760, 170, 1.3, c.accent2, .2) + paw(846, 228, .8, c.accent, .22);
@@ -163,8 +163,8 @@ function terminal(c, data, repos) {
 
 export async function renderCards(data, repos, assets) {
   for (const [theme, c] of Object.entries(palettes)) {
-    await writeFile(join(assets, `banner-${theme}.svg`), hero(c, data, false));
-    await writeFile(join(assets, `banner-mobile-${theme}.svg`), hero(c, data, true));
+    await writeFile(join(assets, `header-${theme}.svg`), hero(c, data, false));
+    await writeFile(join(assets, `header-mobile-${theme}.svg`), hero(c, data, true));
     await writeFile(join(assets, `stats-${theme}.svg`), overview(c, data));
     await writeFile(join(assets, `recent-${theme}.svg`), activity(c, data));
     await writeFile(join(assets, `shell-${theme}.svg`), terminal(c, data, repos));

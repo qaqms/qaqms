@@ -25,15 +25,15 @@
 ## GitHub at a glance
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/overview-dark.svg" />
-  <img width="832" src="./assets/overview-light.svg" alt="GitHub stats, active-day ratio and most used languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg" />
+  <img width="832" src="./assets/stats-light.svg" alt="GitHub stats, active-day ratio and most used languages" />
 </picture>
 
 ## Contribution activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg" />
-  <img width="832" src="./assets/activity-light.svg" alt="Daily contributions over the last 31 days, current and longest streak, and last-year total" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/recent-dark.svg" />
+  <img width="832" src="./assets/recent-light.svg" alt="Daily contributions over the last 31 days, current and longest streak, and last-year total" />
 </picture>
 
 ## Skills &amp; technologies

@@ -194,8 +194,8 @@ export async function renderCards(data, repos, assets) {
   for (const [theme, c] of Object.entries(palettes)) {
     await writeFile(join(assets, `hero-${theme}.svg`), hero(c, img, data, false));
     await writeFile(join(assets, `hero-mobile-${theme}.svg`), hero(c, img, data, true));
-    await writeFile(join(assets, `overview-${theme}.svg`), overview(c, data));
-    await writeFile(join(assets, `activity-${theme}.svg`), activity(c, data));
+    await writeFile(join(assets, `stats-${theme}.svg`), overview(c, data));
+    await writeFile(join(assets, `recent-${theme}.svg`), activity(c, data));
     await writeFile(join(assets, `terminal-${theme}.svg`), terminal(c, data, repos));
     for (const p of featured) await writeFile(join(assets, `project-${p.repo}-${theme}.svg`), project(c, p, byName.get(p.repo)));
   }

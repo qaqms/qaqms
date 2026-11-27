@@ -7,10 +7,6 @@ tools/calendar-snapshot.json
 preview-*.jpg
 preview-*.png
 assets/snake-*.svg
-assets/overview-*.svg
-assets/languages-*.svg
-assets/activity-*.svg
-assets/contributions-*.svg
 tools/snake-entry.ts
 tools/build-snake.mjs
 panel-evidence.tsx

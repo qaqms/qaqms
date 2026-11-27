@@ -32,7 +32,7 @@ for (const element of $('img,source').toArray()) {
 }
 assert.equal($('img[src^="https://count.getloli.com/"]').length, 1, 'Embed the live counter exactly once');
 for (const picture of $('picture').toArray()) assert.ok($(picture).find('source[media*="dark"]').length, 'Every picture needs a dark variant');
-for (const name of ['banner', 'stats', 'recent', 'console', 'landscape']) assert.equal($(`img[src="./assets/${name}-light.svg"]`).length, 1, name);
+for (const name of ['banner', 'stats', 'recent', 'shell', 'landscape']) assert.equal($(`img[src="./assets/${name}-light.svg"]`).length, 1, name);
 assert.equal($('img[src^="./assets/project-"]').length, 0, 'No per-repo cards: the profile shows capabilities, not star counts');
 for (const element of $('a').toArray()) assert.ok($(element).attr('href')?.startsWith('https://github.com/qaqms'));
 for (const file of await readdir(join(root, 'assets'))) {

@@ -11,8 +11,6 @@
   <a href="https://github.com/qaqms?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-repositories-dark.svg" /><img height="20" src="./assets/tag-repositories-light.svg" alt="Repositories" /></picture></a>
 </p>
 
-> 喜欢二次元，专注于给 **N.E.K.O.** 写插件，让陪在身边的猫娘更像一个真正生活着的她。
-
 ## GitHub at a glance
 
 <picture>
@@ -46,8 +44,8 @@
 ## Profile details
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/console-dark.svg" />
-  <img width="832" src="./assets/console-light.svg" alt="Terminal card: whoami, N.E.K.O. plugin list and motto" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/shell-dark.svg" />
+  <img width="832" src="./assets/shell-light.svg" alt="Terminal card: whoami, N.E.K.O. plugin list and motto" />
 </picture>
 
 <details>

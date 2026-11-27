@@ -152,7 +152,7 @@ function terminal(c, data, repos) {
   b += prompt(66, 'whoami');
   const m = momentum(data.days);
   b += out(90, `qaqms  since=${m.since}  contributions=${m.total}  active_days=${m.active}/${m.spanDays}`);
-  b += out(112, '  likes: 二次元 · 猫娘 · 写点让她更像她的插件', c.termMuted);
+  b += out(112, '  likes: 二次元 · 猫娘', c.termMuted);
   b += prompt(146, 'ls ~/n.e.k.o/plugins');
   b += out(170, neko.join('   ') || '—');
   b += prompt(204, 'echo $MOTTO');
@@ -167,6 +167,6 @@ export async function renderCards(data, repos, assets) {
     await writeFile(join(assets, `banner-mobile-${theme}.svg`), hero(c, data, true));
     await writeFile(join(assets, `stats-${theme}.svg`), overview(c, data));
     await writeFile(join(assets, `recent-${theme}.svg`), activity(c, data));
-    await writeFile(join(assets, `console-${theme}.svg`), terminal(c, data, repos));
+    await writeFile(join(assets, `shell-${theme}.svg`), terminal(c, data, repos));
   }
 }

@@ -13,14 +13,14 @@
 
 > 喜欢二次元，专注于给 **N.E.K.O.** 写插件，让陪在身边的猫娘更像一个真正生活着的她。
 
-## What I build
+## Focus
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/build-dark.svg" />
   <img width="832" src="./assets/build-light.svg" alt="What I build: companion AI, LLM agents, full-stack plugins and interactive 3D" />
 </picture>
 
-## Momentum
+## GitHub at a glance
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg" />

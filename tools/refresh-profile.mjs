@@ -6,7 +6,7 @@ import { promisify } from 'node:util';
 import { load } from 'cheerio';
 import { sum } from 'd3';
 import { renderDashboard } from './render-dashboard.mjs';
-import { renderCards } from './render-cards.mjs';
+import { renderCards, badges, badgeColors } from './render-cards.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const assets = join(root, 'assets');
@@ -73,4 +73,10 @@ await writeFile(join(root, 'profile-data.json'), JSON.stringify(data, null, 2));
 
 await renderCards(data, repos, assets);
 await renderDashboard(data, assets);
+for (const b of badges) for (const [theme, [bg, fg]] of Object.entries(badgeColors)) {
+  const label = encodeURIComponent(b.label.replaceAll('-', '--').replaceAll('_', '__'));
+  const badge = await get(`https://img.shields.io/badge/${label}-${bg}?style=flat&logo=${b.logo}&logoColor=${fg}`, false);
+  if (!badge.startsWith('<svg')) throw new Error(`Bad badge: ${b.label}`);
+  await writeFile(join(assets, `badge-${b.slug}-${theme}.svg`), badge);
+}
 console.log(JSON.stringify({ total, repos: data.publicRepos, languages, date: today }));

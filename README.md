@@ -6,9 +6,9 @@
 </picture>
 
 <p>
-  <a href="https://github.com/qaqms"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-3D2F45?style=flat&amp;logo=github&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/GitHub-F6E9F2?style=flat&amp;logo=github&amp;logoColor=B9467F" alt="GitHub" /></picture></a>
-  <a href="https://github.com/qaqms?tab=repositories&q=n.e.k.o_plugin"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/N.E.K.O.%20Plugins-3D2F45?style=flat&amp;logo=github&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/N.E.K.O.%20Plugins-F6E9F2?style=flat&amp;logo=github&amp;logoColor=B9467F" alt="N.E.K.O. plugins" /></picture></a>
-  <a href="https://github.com/qaqms?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Repositories-3D2F45?style=flat&amp;logo=bookstack&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/Repositories-F6E9F2?style=flat&amp;logo=bookstack&amp;logoColor=B9467F" alt="Repositories" /></picture></a>
+  <a href="https://github.com/qaqms"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-github-dark.svg" /><img height="20" src="./assets/badge-github-light.svg" alt="GitHub" /></picture></a>
+  <a href="https://github.com/qaqms?tab=repositories&q=n.e.k.o_plugin"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-n-e-k-o-plugins-dark.svg" /><img height="20" src="./assets/badge-n-e-k-o-plugins-light.svg" alt="N.E.K.O. plugins" /></picture></a>
+  <a href="https://github.com/qaqms?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-repositories-dark.svg" /><img height="20" src="./assets/badge-repositories-light.svg" alt="Repositories" /></picture></a>
 </p>
 
 > 喜欢二次元，专注于给 **N.E.K.O.** 写插件，让陪在身边的猫娘更像一个真正生活着的她。
@@ -39,17 +39,17 @@
 ## Skills &amp; technologies
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Python-3D2F45?style=flat&amp;logo=python&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/Python-F6E9F2?style=flat&amp;logo=python&amp;logoColor=B9467F" alt="Python" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/TypeScript-3D2F45?style=flat&amp;logo=typescript&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/TypeScript-F6E9F2?style=flat&amp;logo=typescript&amp;logoColor=B9467F" alt="TypeScript" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/JavaScript-3D2F45?style=flat&amp;logo=javascript&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/JavaScript-F6E9F2?style=flat&amp;logo=javascript&amp;logoColor=B9467F" alt="JavaScript" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/React-3D2F45?style=flat&amp;logo=react&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/React-F6E9F2?style=flat&amp;logo=react&amp;logoColor=B9467F" alt="React" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-3D2F45?style=flat&amp;logo=openjdk&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/Java-F6E9F2?style=flat&amp;logo=openjdk&amp;logoColor=B9467F" alt="Java" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/SQLite-3D2F45?style=flat&amp;logo=sqlite&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/SQLite-F6E9F2?style=flat&amp;logo=sqlite&amp;logoColor=B9467F" alt="SQLite" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/pytest-3D2F45?style=flat&amp;logo=pytest&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/pytest-F6E9F2?style=flat&amp;logo=pytest&amp;logoColor=B9467F" alt="pytest" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Ruff-3D2F45?style=flat&amp;logo=ruff&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/Ruff-F6E9F2?style=flat&amp;logo=ruff&amp;logoColor=B9467F" alt="Ruff" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Git-3D2F45?style=flat&amp;logo=git&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/Git-F6E9F2?style=flat&amp;logo=git&amp;logoColor=B9467F" alt="Git" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub%20Actions-3D2F45?style=flat&amp;logo=githubactions&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/GitHub%20Actions-F6E9F2?style=flat&amp;logo=githubactions&amp;logoColor=B9467F" alt="GitHub Actions" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Blender-3D2F45?style=flat&amp;logo=blender&amp;logoColor=F4A6CD" /><img height="23" src="https://img.shields.io/badge/Blender-F6E9F2?style=flat&amp;logo=blender&amp;logoColor=B9467F" alt="Blender" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-python-dark.svg" /><img height="20" src="./assets/badge-python-light.svg" alt="Python" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-typescript-dark.svg" /><img height="20" src="./assets/badge-typescript-light.svg" alt="TypeScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-javascript-dark.svg" /><img height="20" src="./assets/badge-javascript-light.svg" alt="JavaScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-react-dark.svg" /><img height="20" src="./assets/badge-react-light.svg" alt="React" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-java-dark.svg" /><img height="20" src="./assets/badge-java-light.svg" alt="Java" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-sqlite-dark.svg" /><img height="20" src="./assets/badge-sqlite-light.svg" alt="SQLite" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-pytest-dark.svg" /><img height="20" src="./assets/badge-pytest-light.svg" alt="pytest" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-ruff-dark.svg" /><img height="20" src="./assets/badge-ruff-light.svg" alt="Ruff" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-git-dark.svg" /><img height="20" src="./assets/badge-git-light.svg" alt="Git" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-github-actions-dark.svg" /><img height="20" src="./assets/badge-github-actions-light.svg" alt="GitHub Actions" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-blender-dark.svg" /><img height="20" src="./assets/badge-blender-light.svg" alt="Blender" /></picture>
 </p>
 
 ## Profile details

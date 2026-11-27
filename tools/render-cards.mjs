@@ -24,6 +24,14 @@ export const featured = [
   { repo: 'mcbot', name: 'mcbot', en: 'Minecraft Agent', lines: ['LLM 驱动的 Minecraft 同伴 agent 框架：', '用自然语言下任务，自主规划并执行。'] }
 ];
 
+// Badges are downloaded from shields.io at refresh time and served from ./assets (no camo / third-party dependency at view time).
+export const badges = [
+  ['GitHub', 'github'], ['N.E.K.O. Plugins', 'github'], ['Repositories', 'bookstack'],
+  ['Python', 'python'], ['TypeScript', 'typescript'], ['JavaScript', 'javascript'], ['React', 'react'], ['Java', 'openjdk'], ['SQLite', 'sqlite'],
+  ['pytest', 'pytest'], ['Ruff', 'ruff'], ['Git', 'git'], ['GitHub Actions', 'githubactions'], ['Blender', 'blender']
+].map(([label, logo]) => ({ label, logo, slug: label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }));
+export const badgeColors = { light: ['F6E9F2', 'B9467F'], dark: ['3D2F45', 'F4A6CD'] };
+
 export function streaks(days) {
   let longest = 0, run = 0;
   for (const d of days) { run = d.count > 0 ? run + 1 : 0; longest = Math.max(longest, run); }

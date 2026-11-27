@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 650px) and (prefers-color-scheme: dark)" srcset="./assets/hero-mobile-dark.svg" />
-  <source media="(max-width: 650px)" srcset="./assets/hero-mobile-light.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-  <img width="832" src="./assets/hero-light.svg" alt="Hi there, I'm qaqms. 二次元爱好者 / N.E.K.O. 插件开发" />
+  <source media="(max-width: 650px) and (prefers-color-scheme: dark)" srcset="./assets/banner-mobile-dark.svg" />
+  <source media="(max-width: 650px)" srcset="./assets/banner-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
+  <img width="832" src="./assets/banner-light.svg" alt="Hi there, I'm qaqms. AI 角色陪伴 · LLM Agent · N.E.K.O. 插件" />
 </picture>
 
 <p>
@@ -12,13 +12,6 @@
 </p>
 
 > 喜欢二次元，专注于给 **N.E.K.O.** 写插件，让陪在身边的猫娘更像一个真正生活着的她。
-
-## Focus
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/build-dark.svg" />
-  <img width="832" src="./assets/build-light.svg" alt="What I build: companion AI, LLM agents, full-stack plugins and interactive 3D" />
-</picture>
 
 ## GitHub at a glance
 

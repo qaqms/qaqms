@@ -16,14 +16,6 @@ const svg = (w, h, title, body, extraStyle = '') => `<svg xmlns="http://www.w3.o
 const t = (x, y, value, { size = 14, fill, weight, anchor, cls, extra = '' } = {}) => `<text x="${x}" y="${y}" font-size="${size}" fill="${fill}"${weight ? ` font-weight="${weight}"` : ''}${anchor ? ` text-anchor="${anchor}"` : ''}${cls ? ` class="${cls}"` : ''} ${extra}>${esc(value)}</text>`;
 const card = (w, h, c, fill = c.bg) => `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="14" fill="${fill}" stroke="${c.border}"/>`;
 
-// "What I build": capability tiles drawn from the work in the N.E.K.O. plugins and mcbot (no star counts).
-export const capabilities = [
-  { icon: 'heart', title: 'AI 角色陪伴系统', en: 'Companion AI', lines: ['情绪模型、身体节律、日记式长期记忆，', '好感与关系阶段，让角色像在“生活”。'], chips: ['Python', 'LLM', 'SQLite'] },
-  { icon: 'prompt', title: 'LLM Agent 工程', en: 'Agents', lines: ['自然语言下任务 → 自主拆解、规划、调用工具，', '通过 HTTP / SSE / MCP 任务桥接入宿主。'], chips: ['Java', 'Minecraft', 'MCP'] },
-  { icon: 'layers', title: '插件全栈交付', en: 'Full-stack Plugins', lines: ['Python 后端 + TS/TSX 面板 + 宿主存储，', '从数据模型到交互界面一个人交付。'], chips: ['TypeScript', 'React', 'Python'] },
-  { icon: 'cube', title: '3D 交互场景', en: 'Interactive 3D', lines: ['角色行走、坐下、转身的细节动画，', 'Blender 布料模拟烘焙进可漫游的小屋。'], chips: ['Blender', '3D', 'Animation'] }
-];
-
 // Badges are downloaded from shields.io at refresh time and served from ./assets (no camo / third-party dependency at view time).
 export const badges = [
   ['GitHub', 'github'], ['N.E.K.O. Plugins', 'github'], ['Repositories', 'bookstack'],
@@ -48,35 +40,21 @@ function paw(x, y, s, fill, opacity = 1) {
 function sparkle(x, y, r, fill, delay) {
   return `<path class="tw" style="animation-delay:${delay}s;transform-origin:${x}px ${y}px" d="M${x} ${y - r}Q${x} ${y} ${x + r} ${y}Q${x} ${y} ${x} ${y + r}Q${x} ${y} ${x - r} ${y}Q${x} ${y} ${x} ${y - r}Z" fill="${fill}"/>`;
 }
-function nowPanel(x, y, w, c, rows) {
-  const h = 54 + rows.length * 48;
-  const ear = (ex, dir) => `<path d="M${ex - 22 * dir} ${y + 2}L${ex - 6 * dir} ${y - 30}L${ex + 12 * dir} ${y + 2}Z" fill="${c.accent}" stroke="${c.accent}" stroke-width="4" stroke-linejoin="round"/><path d="M${ex - 12 * dir} ${y}L${ex - 5 * dir} ${y - 16}L${ex + 3 * dir} ${y}Z" fill="${c.bar2}"/>`;
-  let b = ear(x + 46, 1) + ear(x + w - 46, -1);
-  b += `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="16" fill="${c.bg}" stroke="${c.accent}" stroke-width="2"/>`;
-  b += t(x + 22, y + 30, 'NOW BUILDING', { size: 12, fill: c.accent2, weight: 700, cls: 'mono', extra: 'letter-spacing="2"' });
-  rows.forEach(([title, sub], i) => {
-    const ry = y + 66 + i * 48;
-    b += `<circle cx="${x + 28}" cy="${ry - 5}" r="5" fill="${langColors[i]}"/>` + t(x + 44, ry, title, { size: 16, fill: c.text, weight: 700 }) + t(x + 44, ry + 19, sub, { size: 12, fill: c.muted });
-  });
-  return b;
-}
 const twinkle = '@keyframes tw{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1)}}.tw{animation:tw 3.2s ease-in-out infinite}';
 
-const nowRows = [['AI 角色陪伴', '情绪 · 记忆 · 关系系统'], ['LLM Agent', 'Minecraft 同伴 · 任务规划'], ['3D 交互', '角色动画 · 可漫游小屋']];
 function hero(c, data, mobile) {
-  const w = mobile ? 440 : 880, h = mobile ? 250 : 280;
+  const w = mobile ? 440 : 880, h = mobile ? 250 : 260;
   let b = `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c.bg}"/><stop offset="1" stop-color="${c.bg2}"/></linearGradient></defs>`;
   b += `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="16" fill="url(#g)" stroke="${c.border}"/>`;
   const sub = 'AI 角色陪伴 · LLM Agent · N.E.K.O. 插件';
   if (!mobile) {
-    b += `<circle cx="840" cy="34" r="60" fill="${c.faint}" opacity=".6"/><circle cx="560" cy="262" r="40" fill="${c.faint}" opacity=".5"/>`;
-    b += paw(520, 70, .9, c.accent, .22) + paw(500, 210, 1.1, c.accent2, .2) + paw(858, 250, .8, c.accent, .22);
-    b += sparkle(528, 140, 8, c.accent, 0) + sparkle(856, 140, 7, c.accent2, 1.1) + sparkle(470, 40, 6, c.accent2, 2);
-    b += nowPanel(560, 50, 270, c, nowRows);
-    b += t(56, 82, '$ whoami', { size: 17, fill: c.accent, weight: 700, cls: 'mono' });
-    b += t(54, 138, 'Hi there,', { size: 48, fill: c.text, weight: 800 });
-    b += `<text x="54" y="194" font-size="48" font-weight="800" fill="${c.text}">I'm <tspan fill="${c.accent}">qaqms</tspan></text>`;
-    b += t(56, 232, sub, { size: 17, fill: c.muted, weight: 600 });
+    b += `<circle cx="800" cy="40" r="90" fill="${c.faint}" opacity=".55"/><circle cx="690" cy="236" r="54" fill="${c.faint}" opacity=".45"/>`;
+    b += paw(620, 80, 1, c.accent, .22) + paw(760, 170, 1.3, c.accent2, .2) + paw(846, 228, .8, c.accent, .22);
+    b += sparkle(560, 160, 8, c.accent, 0) + sparkle(830, 110, 7, c.accent2, 1.1) + sparkle(700, 56, 6, c.accent2, 2);
+    b += t(56, 72, '$ whoami', { size: 17, fill: c.accent, weight: 700, cls: 'mono' });
+    b += t(54, 128, 'Hi there,', { size: 48, fill: c.text, weight: 800 });
+    b += `<text x="54" y="184" font-size="48" font-weight="800" fill="${c.text}">I'm <tspan fill="${c.accent}">qaqms</tspan></text>`;
+    b += t(56, 222, sub, { size: 17, fill: c.muted, weight: 600 });
   } else {
     b += paw(400, 50, .8, c.accent, .25) + paw(380, 214, .9, c.accent2, .2) + sparkle(360, 70, 7, c.accent, 0) + sparkle(410, 120, 6, c.accent2, 1.2);
     b += t(30, 60, '$ whoami', { size: 15, fill: c.accent, weight: 700, cls: 'mono' });
@@ -84,7 +62,7 @@ function hero(c, data, mobile) {
     b += `<text x="28" y="160" font-size="38" font-weight="800" fill="${c.text}">I'm <tspan fill="${c.accent}">qaqms</tspan></text>`;
     b += t(30, 200, sub, { size: 14, fill: c.muted, weight: 600 });
   }
-  return svg(w, h, `Hi there, I'm qaqms. ${sub}. Now building: ${nowRows.map(r => r.join(' – ')).join('; ')}.`, b, twinkle);
+  return svg(w, h, `Hi there, I'm qaqms. ${sub}.`, b, twinkle);
 }
 
 const icons = {
@@ -161,29 +139,6 @@ function activity(c, data) {
   return svg(w, h, `Daily contributions over the last 31 days: ${month}. Current streak ${current} days, longest streak ${longest} days, ${data.total} contributions in the last year.`, b);
 }
 
-const glyph = {
-  heart: (x, y, f) => `<path transform="translate(${x} ${y})" d="M12 20s-8-4.6-8-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 8 2.8C20 15.4 12 20 12 20z" fill="${f}"/>`,
-  prompt: (x, y, f) => `<path transform="translate(${x} ${y})" d="M4 7l6 5-6 5M12 18h8" fill="none" stroke="${f}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>`,
-  layers: (x, y, f) => `<path transform="translate(${x} ${y})" d="M12 3l9 5-9 5-9-5zM3 12.5l9 5 9-5M3 17l9 5 9-5" fill="none" stroke="${f}" stroke-width="2.2" stroke-linejoin="round"/>`,
-  cube: (x, y, f) => `<path transform="translate(${x} ${y})" d="M12 2.5l8.5 4.8v9.4L12 21.5l-8.5-4.8V7.3zM3.5 7.3L12 12l8.5-4.7M12 12v9.5" fill="none" stroke="${f}" stroke-width="2.2" stroke-linejoin="round"/>`
-};
-function capabilitiesCard(c) {
-  const w = 880, h = 448, tw = 400, th = 160;
-  let b = card(w, h, c);
-  b += t(32, 46, 'What I build', { size: 22, fill: c.text, weight: 700 }) + t(176, 46, '能力方向，而不是项目列表', { size: 13, fill: c.muted });
-  capabilities.forEach((p, i) => {
-    const x = 32 + (i % 2) * (tw + 16), y = 70 + Math.floor(i / 2) * (th + 16), col = langColors[i];
-    b += `<rect x="${x}" y="${y}" width="${tw}" height="${th}" rx="12" fill="${c.bg2}" stroke="${c.border}"/>`;
-    b += `<rect x="${x + 18}" y="${y + 18}" width="40" height="40" rx="10" fill="${col}" opacity=".18"/>` + glyph[p.icon](x + 26, y + 26, col);
-    b += t(x + 72, y + 36, p.title, { size: 17, fill: c.text, weight: 700 }) + t(x + 72, y + 55, p.en, { size: 12, fill: c.muted, weight: 600 });
-    p.lines.forEach((line, j) => { b += t(x + 20, y + 88 + j * 21, line, { size: 13, fill: c.text }); });
-    let cx = x + 20;
-    p.chips.forEach(chip => { const cw = chip.length * 7.2 + 18; b += `<rect x="${cx}" y="${y + 124}" width="${cw}" height="22" rx="11" fill="${c.faint}"/>` + t(cx + cw / 2, y + 139, chip, { size: 11, fill: c.accent, weight: 600, anchor: 'middle' }); cx += cw + 8; });
-  });
-  b += t(32, 432, '每个插件都按版本持续发布，用 pytest / Ruff / GitHub Actions 把关。', { size: 12, fill: c.muted });
-  return svg(w, h, 'What I build: ' + capabilities.map(p => `${p.title} (${p.en}): ${p.lines.join('')}`).join(' '), b);
-}
-
 function terminal(c, data, repos) {
   const w = 880, h = 250;
   const own = repos.filter(r => !r.fork && r.name !== data.user);
@@ -208,11 +163,10 @@ function terminal(c, data, repos) {
 
 export async function renderCards(data, repos, assets) {
   for (const [theme, c] of Object.entries(palettes)) {
-    await writeFile(join(assets, `hero-${theme}.svg`), hero(c, data, false));
-    await writeFile(join(assets, `hero-mobile-${theme}.svg`), hero(c, data, true));
+    await writeFile(join(assets, `banner-${theme}.svg`), hero(c, data, false));
+    await writeFile(join(assets, `banner-mobile-${theme}.svg`), hero(c, data, true));
     await writeFile(join(assets, `stats-${theme}.svg`), overview(c, data));
     await writeFile(join(assets, `recent-${theme}.svg`), activity(c, data));
-    await writeFile(join(assets, `build-${theme}.svg`), capabilitiesCard(c));
     await writeFile(join(assets, `terminal-${theme}.svg`), terminal(c, data, repos));
   }
 }

@@ -77,6 +77,6 @@ for (const b of badges) for (const [theme, [bg, fg]] of Object.entries(badgeColo
   const label = encodeURIComponent(b.label.replaceAll('-', '--').replaceAll('_', '__'));
   const badge = await get(`https://img.shields.io/badge/${label}-${bg}?style=flat&logo=${b.logo}&logoColor=${fg}`, false);
   if (!badge.startsWith('<svg')) throw new Error(`Bad badge: ${b.label}`);
-  await writeFile(join(assets, `badge-${b.slug}-${theme}.svg`), badge);
+  await writeFile(join(assets, `tag-${b.slug}-${theme}.svg`), badge);
 }
 console.log(JSON.stringify({ total, repos: data.publicRepos, languages, date: today }));

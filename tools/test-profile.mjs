@@ -32,7 +32,7 @@ for (const element of $('img,source').toArray()) {
 }
 assert.equal($('img[src^="https://count.getloli.com/"]').length, 1, 'Embed the live counter exactly once');
 for (const picture of $('picture').toArray()) assert.ok($(picture).find('source[media*="dark"]').length, 'Every picture needs a dark variant');
-for (const name of ['banner', 'stats', 'recent', 'terminal', 'landscape']) assert.equal($(`img[src="./assets/${name}-light.svg"]`).length, 1, name);
+for (const name of ['banner', 'stats', 'recent', 'console', 'landscape']) assert.equal($(`img[src="./assets/${name}-light.svg"]`).length, 1, name);
 assert.equal($('img[src^="./assets/project-"]').length, 0, 'No per-repo cards: the profile shows capabilities, not star counts');
 for (const element of $('a').toArray()) assert.ok($(element).attr('href')?.startsWith('https://github.com/qaqms'));
 for (const file of await readdir(join(root, 'assets'))) {
@@ -40,9 +40,9 @@ for (const file of await readdir(join(root, 'assets'))) {
   const source = await readFile(join(root, 'assets', file), 'utf8');
   const xml = load(source, { xmlMode: true });
   assert.equal(xml('svg').length, 1, file);
-  if (!file.startsWith('badge-')) assert.ok(xml('svg').attr('viewBox'), file);
+  if (!file.startsWith('tag-')) assert.ok(xml('svg').attr('viewBox'), file);
   assert.ok(!/NaN|undefined|Infinity|<script/i.test(source.replace(/data:image\/png;base64,[A-Za-z0-9+/=]+/g, '')), file);
-  if (!file.startsWith('badge-')) assert.ok(xml('title').length, file);
+  if (!file.startsWith('tag-')) assert.ok(xml('title').length, file);
 }
 for (const theme of ['dark', 'light']) {
   const overview = await readFile(join(root, `assets/stats-${theme}.svg`), 'utf8');

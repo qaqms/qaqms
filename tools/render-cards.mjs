@@ -167,6 +167,6 @@ export async function renderCards(data, repos, assets) {
     await writeFile(join(assets, `banner-mobile-${theme}.svg`), hero(c, data, true));
     await writeFile(join(assets, `stats-${theme}.svg`), overview(c, data));
     await writeFile(join(assets, `recent-${theme}.svg`), activity(c, data));
-    await writeFile(join(assets, `terminal-${theme}.svg`), terminal(c, data, repos));
+    await writeFile(join(assets, `console-${theme}.svg`), terminal(c, data, repos));
   }
 }

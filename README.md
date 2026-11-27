@@ -6,9 +6,9 @@
 </picture>
 
 <p>
-  <a href="https://github.com/qaqms"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-github-dark.svg" /><img height="20" src="./assets/badge-github-light.svg" alt="GitHub" /></picture></a>
-  <a href="https://github.com/qaqms?tab=repositories&q=n.e.k.o_plugin"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-n-e-k-o-plugins-dark.svg" /><img height="20" src="./assets/badge-n-e-k-o-plugins-light.svg" alt="N.E.K.O. plugins" /></picture></a>
-  <a href="https://github.com/qaqms?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-repositories-dark.svg" /><img height="20" src="./assets/badge-repositories-light.svg" alt="Repositories" /></picture></a>
+  <a href="https://github.com/qaqms"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-github-dark.svg" /><img height="20" src="./assets/tag-github-light.svg" alt="GitHub" /></picture></a>
+  <a href="https://github.com/qaqms?tab=repositories&q=n.e.k.o_plugin"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-n-e-k-o-plugins-dark.svg" /><img height="20" src="./assets/tag-n-e-k-o-plugins-light.svg" alt="N.E.K.O. plugins" /></picture></a>
+  <a href="https://github.com/qaqms?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-repositories-dark.svg" /><img height="20" src="./assets/tag-repositories-light.svg" alt="Repositories" /></picture></a>
 </p>
 
 > 喜欢二次元，专注于给 **N.E.K.O.** 写插件，让陪在身边的猫娘更像一个真正生活着的她。
@@ -30,24 +30,24 @@
 ## Skills &amp; technologies
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-python-dark.svg" /><img height="20" src="./assets/badge-python-light.svg" alt="Python" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-typescript-dark.svg" /><img height="20" src="./assets/badge-typescript-light.svg" alt="TypeScript" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-javascript-dark.svg" /><img height="20" src="./assets/badge-javascript-light.svg" alt="JavaScript" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-react-dark.svg" /><img height="20" src="./assets/badge-react-light.svg" alt="React" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-java-dark.svg" /><img height="20" src="./assets/badge-java-light.svg" alt="Java" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-sqlite-dark.svg" /><img height="20" src="./assets/badge-sqlite-light.svg" alt="SQLite" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-pytest-dark.svg" /><img height="20" src="./assets/badge-pytest-light.svg" alt="pytest" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-ruff-dark.svg" /><img height="20" src="./assets/badge-ruff-light.svg" alt="Ruff" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-git-dark.svg" /><img height="20" src="./assets/badge-git-light.svg" alt="Git" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-github-actions-dark.svg" /><img height="20" src="./assets/badge-github-actions-light.svg" alt="GitHub Actions" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badge-blender-dark.svg" /><img height="20" src="./assets/badge-blender-light.svg" alt="Blender" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg" /><img height="20" src="./assets/tag-python-light.svg" alt="Python" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-typescript-dark.svg" /><img height="20" src="./assets/tag-typescript-light.svg" alt="TypeScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-javascript-dark.svg" /><img height="20" src="./assets/tag-javascript-light.svg" alt="JavaScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-react-dark.svg" /><img height="20" src="./assets/tag-react-light.svg" alt="React" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-java-dark.svg" /><img height="20" src="./assets/tag-java-light.svg" alt="Java" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-sqlite-dark.svg" /><img height="20" src="./assets/tag-sqlite-light.svg" alt="SQLite" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-pytest-dark.svg" /><img height="20" src="./assets/tag-pytest-light.svg" alt="pytest" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-ruff-dark.svg" /><img height="20" src="./assets/tag-ruff-light.svg" alt="Ruff" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-git-dark.svg" /><img height="20" src="./assets/tag-git-light.svg" alt="Git" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-github-actions-dark.svg" /><img height="20" src="./assets/tag-github-actions-light.svg" alt="GitHub Actions" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-blender-dark.svg" /><img height="20" src="./assets/tag-blender-light.svg" alt="Blender" /></picture>
 </p>
 
 ## Profile details
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg" />
-  <img width="832" src="./assets/terminal-light.svg" alt="Terminal card: whoami, N.E.K.O. plugin list and motto" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/console-dark.svg" />
+  <img width="832" src="./assets/console-light.svg" alt="Terminal card: whoami, N.E.K.O. plugin list and motto" />
 </picture>
 
 <details>

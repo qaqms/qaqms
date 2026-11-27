@@ -13,20 +13,18 @@
 
 > 喜欢二次元，专注于给 **N.E.K.O.** 写插件，让陪在身边的猫娘更像一个真正生活着的她。
 
-## Featured projects
+## What I build
 
-<p>
-  <a href="https://github.com/qaqms/n.e.k.o_plugin_forever_companion"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-n.e.k.o_plugin_forever_companion-dark.svg" /><img width="410" src="./assets/project-n.e.k.o_plugin_forever_companion-light.svg" alt="永远的陪伴：情绪、节律与日记" /></picture></a>
-  <a href="https://github.com/qaqms/n.e.k.o_plugin_love_with_you"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-n.e.k.o_plugin_love_with_you-dark.svg" /><img width="410" src="./assets/project-n.e.k.o_plugin_love_with_you-light.svg" alt="与你相恋：好感、纪念日与 3D 小屋" /></picture></a>
-  <a href="https://github.com/qaqms/n.e.k.o_plugin_sticker_manager"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-n.e.k.o_plugin_sticker_manager-dark.svg" /><img width="410" src="./assets/project-n.e.k.o_plugin_sticker_manager-light.svg" alt="表情包管理：让 YUI 自己挑表情包" /></picture></a>
-  <a href="https://github.com/qaqms/mcbot"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-mcbot-dark.svg" /><img width="410" src="./assets/project-mcbot-light.svg" alt="mcbot：LLM 驱动的 Minecraft 同伴" /></picture></a>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/build-dark.svg" />
+  <img width="832" src="./assets/build-light.svg" alt="What I build: companion AI, LLM agents, full-stack plugins and interactive 3D" />
+</picture>
 
-## GitHub at a glance
+## Momentum
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg" />
-  <img width="832" src="./assets/stats-light.svg" alt="GitHub stats, active-day ratio and most used languages" />
+  <img width="832" src="./assets/stats-light.svg" alt="Contributions, active days and best day since the first contribution, plus most used languages" />
 </picture>
 
 ## Contribution activity

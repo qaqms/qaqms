@@ -32,8 +32,8 @@ for (const element of $('img,source').toArray()) {
 }
 assert.equal($('img[src^="https://count.getloli.com/"]').length, 1, 'Embed the live counter exactly once');
 for (const picture of $('picture').toArray()) assert.ok($(picture).find('source[media*="dark"]').length, 'Every picture needs a dark variant');
-for (const name of ['hero', 'stats', 'recent', 'terminal', 'landscape']) assert.equal($(`img[src="./assets/${name}-light.svg"]`).length, 1, name);
-assert.equal($('img[src^="./assets/project-"]').length, 4);
+for (const name of ['hero', 'build', 'stats', 'recent', 'terminal', 'landscape']) assert.equal($(`img[src="./assets/${name}-light.svg"]`).length, 1, name);
+assert.equal($('img[src^="./assets/project-"]').length, 0, 'No per-repo cards: the profile shows capabilities, not star counts');
 for (const element of $('a').toArray()) assert.ok($(element).attr('href')?.startsWith('https://github.com/qaqms'));
 for (const file of await readdir(join(root, 'assets'))) {
   if (!file.endsWith('.svg')) continue;
@@ -46,7 +46,7 @@ for (const file of await readdir(join(root, 'assets'))) {
 }
 for (const theme of ['dark', 'light']) {
   const overview = await readFile(join(root, `assets/stats-${theme}.svg`), 'utf8');
-  assert.ok(overview.includes(data.updated) && overview.includes(`${data.total} contributions`));
+  assert.ok(overview.includes(data.updated) && !/stars/i.test(overview));
   const activity = await readFile(join(root, `assets/recent-${theme}.svg`), 'utf8');
   assert.equal(load(activity, { xmlMode: true })('rect > title').length, 31);
   const landscape = await readFile(join(root, `assets/landscape-${theme}.svg`), 'utf8');

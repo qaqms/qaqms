@@ -5,8 +5,8 @@ import { color } from 'd3';
 // Isometric contribution landscape (the older dashboard / language-orbit cards were replaced by render-cards.mjs).
 export async function renderDashboard(data, assets) {
   const palettes = {
-    dark: { bg:'#231b29', border:'#3d2f45', text:'#f4eaf2', muted:'#b6a5bc', blue:'#f4a6cd', teal:'#c4abf2', orange:'#e48bb8', empty:'#33263b' },
-    light: { bg:'#fbf5fa', border:'#ecdcea', text:'#2e2435', muted:'#7d6c84', blue:'#b9467f', teal:'#7b5fc0', orange:'#d47aa7', empty:'#efe3ee' }
+    dark: { bg:'#16212d', border:'#2c3e52', text:'#e8f1fa', muted:'#9fb3c7', blue:'#8ccaf5', teal:'#a9b8f5', orange:'#6db7ec', empty:'#22323f' },
+    light: { bg:'#f4f9fe', border:'#d6e6f5', text:'#1f2d3d', muted:'#62758a', blue:'#2f7fc1', teal:'#5a6fd0', orange:'#5fa8e0', empty:'#e2eef9' }
   };
   const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
   const first = Date.parse(data.days[0].date);

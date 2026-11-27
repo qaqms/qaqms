@@ -1,13 +1,13 @@
-// Profile cards in a soft sakura / lavender style (light + dark), generated from real public data.
+// Profile cards in a soft light-blue style (light + dark), generated from real public data.
 import { writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { arc, scaleLinear, sum } from 'd3';
 
 export const palettes = {
-  light: { bg: '#fbf5fa', bg2: '#f6eef8', border: '#ecdcea', text: '#2e2435', muted: '#7d6c84', faint: '#e9dcea', accent: '#b9467f', accent2: '#7b5fc0', bar: '#d47aa7', bar2: '#efd2e2', term: '#2c2233', termBar: '#3a2d43', termText: '#f2e8f0', termAccent: '#f4a6cd', termMuted: '#b9a7bf' },
-  dark: { bg: '#231b29', bg2: '#2b2132', border: '#3d2f45', text: '#f4eaf2', muted: '#b6a5bc', faint: '#3b2e43', accent: '#f4a6cd', accent2: '#c4abf2', bar: '#e48bb8', bar2: '#4a3753', term: '#170f1c', termBar: '#2b2132', termText: '#f2e8f0', termAccent: '#f4a6cd', termMuted: '#a897ae' }
+  light: { bg: '#f4f9fe', bg2: '#eaf3fc', border: '#d6e6f5', text: '#1f2d3d', muted: '#62758a', faint: '#dceaf7', accent: '#2f7fc1', accent2: '#5a6fd0', bar: '#5fa8e0', bar2: '#cfe4f6', term: '#1d2a38', termBar: '#2a3a4c', termText: '#e8f1fa', termAccent: '#8ccaf5', termMuted: '#9fb3c7' },
+  dark: { bg: '#16212d', bg2: '#1b2836', border: '#2c3e52', text: '#e8f1fa', muted: '#9fb3c7', faint: '#26384b', accent: '#8ccaf5', accent2: '#a9b8f5', bar: '#6db7ec', bar2: '#2f4860', term: '#0f1822', termBar: '#1b2836', termText: '#e8f1fa', termAccent: '#8ccaf5', termMuted: '#8ea3b8' }
 };
-const langColors = ['#d47aa7', '#9681d4', '#6ea7d8', '#dfb25c', '#76c2a4', '#e58b70', '#a9a3bd', '#c7a3d9'];
+const langColors = ['#5fa8e0', '#8a8fe0', '#5cc4c0', '#e8b65c', '#e48fae', '#9cc76e', '#a7b4c4', '#b9a3e3'];
 const FONT = "'Segoe UI','PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif";
 const MONO = "Consolas,'SFMono-Regular',Menlo,'Microsoft YaHei',monospace";
 const esc = v => String(v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
@@ -30,7 +30,7 @@ export const badges = [
   ['Python', 'python'], ['TypeScript', 'typescript'], ['JavaScript', 'javascript'], ['React', 'react'], ['Java', 'openjdk'], ['SQLite', 'sqlite'],
   ['pytest', 'pytest'], ['Ruff', 'ruff'], ['Git', 'git'], ['GitHub Actions', 'githubactions'], ['Blender', 'blender']
 ].map(([label, logo]) => ({ label, logo, slug: label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }));
-export const badgeColors = { light: ['F6E9F2', 'B9467F'], dark: ['3D2F45', 'F4A6CD'] };
+export const badgeColors = { light: ['E4F0FB', '2F7FC1'], dark: ['233547', '8CCAF5'] };
 
 export function streaks(days) {
   let longest = 0, run = 0;
@@ -190,7 +190,7 @@ function terminal(c, data, repos) {
   const neko = own.filter(r => r.name.startsWith('n.e.k.o_plugin_')).map(r => r.name.replace('n.e.k.o_plugin_', ''));
   const years = ((Date.parse(data.updated) - Date.parse(data.joined)) / 31557600000).toFixed(1);
   let b = `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="14" fill="${c.term}" stroke="${c.border}"/><path d="M14 .5h852a14 14 0 0 1 13.5 13.5V34H.5V14A14 14 0 0 1 14 .5z" fill="${c.termBar}"/>`;
-  b += ['#f4a6cd', '#e9cc8a', '#a8dcc0'].map((f, i) => `<circle cx="${24 + i * 20}" cy="17" r="6" fill="${f}"/>`).join('');
+  b += ['#f29b9b', '#e9cc8a', '#a8dcc0'].map((f, i) => `<circle cx="${24 + i * 20}" cy="17" r="6" fill="${f}"/>`).join('');
   b += t(440, 22, 'qaqms@neko: ~', { size: 13, fill: c.termMuted, anchor: 'middle', cls: 'mono' });
   const prompt = (y, cmd) => `<text x="24" y="${y}" font-size="15" class="mono"><tspan fill="${c.termAccent}">qaqms@neko</tspan><tspan fill="${c.termMuted}">:~$ </tspan><tspan fill="${c.termText}">${esc(cmd)}</tspan></text>`;
   const out = (y, s, fill = c.termText) => t(24, y, s, { size: 15, fill, cls: 'mono' });
